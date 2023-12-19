@@ -110,6 +110,8 @@ $route['shope/online_puja/(:any)'] 	= 'shope/details';
 $route['shope/shop'] 	= 'shope/shope';
 $route['shope/shop/(:any)']	= 'shope/shope_details';
 
+$route['astrologers'] 	= 'Astrologer';
+
 $route['signup'] = "customer/registration";
 $route['verifyotp'] = "customer/verifyMobineNumber";
 $route['dashboard'] = "dashboard/index";

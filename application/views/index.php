@@ -1080,7 +1080,7 @@ Author: Webstrot
 			</div>
 			<div class="hs_effect_btn">
 				<ul>
-					<li><a href="#" class="hs_btn_hover hs_lg_btn">View all astrologers</a></li>
+					<li><a href="<?php echo base_url('astrologers');?>" class="hs_btn_hover hs_lg_btn">View all astrologers</a></li>
 				</ul>
 			</div>
 		</div>
