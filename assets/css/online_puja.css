@@ -1,0 +1,301 @@
+.online-puja-box {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 4px gray;
+    border-radius: 10px;
+    padding-bottom: 45px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(223, 223, 223);
+}
+
+.online-puja-box:hover {
+    box-shadow: none;
+}
+
+.online-puja-box img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.online-puja-box p {
+    margin: 12px 0;
+}
+
+.online-puja-box h4 {
+    margin: 10px 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+
+
+/* online puja details */
+.online-puja-details {
+    width: 100%;
+}
+
+.online-puja-details img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.online-puja-details p {
+    margin: 12px 0;
+}
+
+.online-puja-details h4 {
+    margin: 10px 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.horoscope-image.a {
+    background: transparent;
+}
+
+/* live astrologer */
+.live-astrologer {
+    background-color: rgb(255 248 126);
+    background-image: url(/img/live-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+    padding: 60px 0;
+    opacity: 1;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.live-astrologer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+.live-astrologer img {
+    border-radius: 50%;
+}
+
+.live-astrologer p {
+    color: white;
+    margin-top: 10px;
+}
+
+.live-astrologer h4 {
+    color: white;
+    margin-top: 26px;
+    font-size: 25px;
+}
+
+.live-astrologer span {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: red;
+    padding: 3px 22px;
+    border-radius: 14px;
+    padding-left: 30px;
+    color: white;
+}
+
+.live-astrologer .online-red {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #34C105;
+    top: 24px;
+    left: 27px;
+    border-radius: 50%;
+    z-index: 1;
+    padding: 0;
+    animation: circles 1s linear infinite;
+}
+
+@keyframes circles {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: #ecf0f1;
+    }
+}
+
+.upcoming {
+    position: absolute;
+    top: 13px;
+    left: -7px;
+    padding: 3px 22px;
+    border-radius: 14px;
+    padding-left: 30px;
+    color: white;
+    display: flex;
+}
+
+.upcoming p {
+    border: 1px solid gray;
+    margin: 0 10px;
+    padding: 4px 15px;
+    border-radius: 20px;
+
+}
+
+.green-btn {
+    background: transparent;
+    border: 1px solid #34C105;
+    color: #34C105;
+}
+
+.green-btn a {
+    color: #34C105;
+    font-weight: 600;
+}
+
+.green-btn:hover {
+    background-color: #34C105;
+    color: white;
+    border-color: #34C105;
+}
+
+.green-btn:hover a {
+    color: white;
+}
+
+
+
+
+/* panchang */
+.panchang-input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.panchang-input-section input {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.panchang-input-section div {
+    display: flex;
+    position: relative;
+}
+
+.panchang-input-section div i {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    font-weight: 600;
+}
+
+.panchang-input-section div p {
+    border: 1px solid;
+    padding: 7px 20px;
+    margin: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.panchang-input-section div p:first-child {
+    border-color: #F96F07 !important;
+    color: #f96f07;
+    margin-right: 13px;
+}
+
+.panchang-input-section div p:last-child {
+    background-color: gainsboro;
+}
+
+.panchang-input-section div p span {
+    font-size: 12px;
+}
+
+.panchang-sunrise-section {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 23px;
+    justify-content: space-between;
+}
+
+.panchang-sunrise-section div {
+    text-align: center;
+}
+
+.auspicious-box.a {
+    background: #d6e7f5;
+}
+
+.auspicious-box.b {
+    background: #fde6bc;
+}
+
+.auspicious-box.c {
+    background: #ffcfd7;
+}
+
+.auspicious-box.d {
+    background: #badedb;
+}
+
+.auspicious-box {
+    text-align: center;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px gainsboro;
+    margin-bottom: 25px;
+}
+
+.auspicious-box h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #5e5c5c;
+    margin-bottom: 10px;
+}
+
+.panchang-table table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 25px;
+    text-align: start;
+    width: 50%;
+}
+
+.panchang-table td {
+    width: 33%;
+}
+
+.panchang-table {
+    margin-top: 20px;
+}
+
+.panchang-table h4 {
+    margin: 8px 0;
+}
+
+.panchang-table div {
+    border: 1px solid gray;
+    padding: 25px;
+    border-bottom: 0;
+
+}

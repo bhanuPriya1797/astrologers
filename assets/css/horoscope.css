@@ -1,0 +1,273 @@
+.section-home {
+    background: url(../images/bg-section-home.jpg) no-repeat center/cover;
+    /* background: url(../img/chatwith.jpg) no-repeat center/cover; */
+
+}
+
+.order-1 {
+    color: white;
+}
+
+h1 {
+    color: white !important;
+}
+
+.section-home::before {}
+
+.horoscope-image {
+    animation: rotating 20s linear infinite;
+    border-radius: 50%;
+    margin: 0 -10px;
+    position: relative;
+    width: calc(100% + -150px);
+    background: #F96F07;
+    cursor: pointer;
+}
+
+.horoscope-image:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.divider-xl-65 {
+    margin-top: 65px;
+}
+
+.divider-50 {
+    margin-top: 50px;
+}
+
+.order-1 {
+    margin-top: 109px;
+    padding-bottom: 11px;
+}
+
+
+
+/*=====================********************js tab ***************===================*/
+.horoscope-image-box .tab-menu {
+    border: 1px solid #F96F07;
+    padding-bottom: 37px;
+    padding-top: 15px;
+}
+
+.horoscope-image-box .tab-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.horoscope-image-box .tab-menu ul li {
+    /* padding: 1rem; */
+    /* background: #ddd; */
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-size: 1rem;
+    margin: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 50%;
+    width: 95px;
+    place-items: center;
+    height: 95px;
+    border: 1px solid #F96F07;
+
+}
+
+.horoscope-image-box .tab-menu ul li img {
+    margin-top: -5px;
+}
+
+.horoscope-image-box .tab-menu ul li:hover {
+    background: #F96F07;
+}
+
+
+
+.horoscope-image-box .tab-menu ul .active-menu {
+    background: #F96F07;
+    color: #ddd;
+    cursor: default;
+}
+
+.horoscope-image-box .tab-menu ul .active-menu:hover {
+    background: #F96F07;
+    color: #ddd;
+}
+
+@media (min-width: 405px) {
+    .horoscope-image-box .tab-menu ul li {
+        padding: 1rem 2rem;
+    }
+}
+
+.horoscope-image-box .tab-content {
+    position: relative;
+    display: -webkit-inline-box;
+    width: 100%;
+
+}
+
+.horoscope-image-box .slide {
+    transform: translateX(100vw);
+    /* position: absolute; */
+    text-align: center;
+    width: 100%;
+}
+
+.horoscope-image-box .slide>div h2 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.horoscope-image-box .slide>div p {
+
+    margin-bottom: 20px;
+}
+
+.horoscope-image-box .slide>div h4 {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.horoscope-image-box .slide>div hr {
+    padding: 0;
+    margin: 0;
+    color: #F96F07 !important;
+    background: #F96F07 !important;
+}
+
+
+.horoscope-image-box .slide>div h4:hover {
+    background-color: #cccccc;
+}
+
+
+.horoscope-right-box {
+    border: 1px solid #F96F07;
+    padding: 24px 0 0 0;
+}
+
+.horoscope-image-box .slide img {
+    width: 95px;
+    border: 1px solid #F96F07;
+    border-radius: 50%;
+
+}
+
+.horoscope-image-box .slider-ul-img {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.horoscope-image-box .active-menu {
+    background: #444;
+}
+
+.horoscope-image-box .active-tab {
+    transform: translateX(0);
+    -webkit-animation: moveLeft 600ms ease;
+    animation: moveLeft 600ms ease;
+}
+
+@-webkit-keyframes moveLeft {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* today horoscope */
+.today-horoscope-box1 div {
+    height: 100%;
+}
+
+.today-horoscope-box {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.today-horoscope-box:hover {
+    box-shadow: 0 0 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px gray;
+}
+
+.today-horoscope-box img {
+    border: 1px solid #F96F07;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+}
+
+.today-horoscope-box:hover img {
+    background-color: #F96F07;
+    color: white;
+}
+
+.today-horoscope-box:hover p,
+a {
+    color: gray;
+}
+
+
+
+.today-horoscope-box div:last-child {
+    margin-left: 30px;
+}
+
+.today-horoscope-box div:last-child span {
+    color: #F96F07;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 12px;
+    right: 41px;
+}
+
+.today-horoscope-box div:last-child h4 {
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 10px;
+}

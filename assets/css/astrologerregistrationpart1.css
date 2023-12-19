@@ -1,0 +1,269 @@
+.astrologer-register .topMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.astrologer-register .topMenu .topLogo img {
+    width: 28%;
+}
+
+.astrologer-register .rightHeaderContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 18px 40px;
+}
+
+.astrologer-register .chatAstrologer {
+    border: 1px solid #606366;
+    border-radius: 30px;
+    vertical-align: middle;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.astrologer-register .chatAstrologer a {
+    color: #606366;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.astrologer-register .talkAstrologer {
+    border: 1px solid #606366;
+    border-radius: 30px;
+    padding: 8px 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.astrologer-register .talkAstrologer a {
+    color: #606366;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.astrologer-register .login {
+    border: 1px solid #606366;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.astrologer-register .login a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.astrologer-register .navigation {
+    background-color: #ffcc33;
+    height: 48px;
+    width: 100%;
+    z-index: 99;
+}
+
+.astrologer-register .navigation .navitems ul {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.astrologer-register .navigation .navitems ul a {
+    color: #212529;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.herobreadcrumb .underheaderbar {
+    color: #606366;
+    font-weight: 500;
+    margin-top: 100px;
+    padding: 0px 40px;
+}
+
+.herobreadcrumb .underheaderbar a {
+    color: #fd7e14;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.astroContent h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #000 !important;
+    margin: 30px 0px;
+}
+
+.processBar {
+    display: flex;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    width: 90%;
+    margin-left: 18%;
+}
+
+.processBar .process {
+    text-align: left;
+    width: 100%;
+    position: relative;
+    margin-top: 4px;
+}
+
+.processBar .process p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.processBar .process .bulletcircle {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    background-color: #226caa;
+    padding: 1px 8px;
+}
+
+.processBar .process .bulletcircles {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    background-color: #226caa;
+    padding: 1px 8px;
+}
+
+.processBar .process .bulletcircle::before,
+.processBar .process .bulletcircle::after {
+    position: absolute;
+    content: "";
+    bottom: 9px;
+    left: 26px;
+    height: 3px;
+    width: 330px;
+    background: #ccc;
+}
+
+.processBar .process .check {
+    position: absolute;
+    top: 44px;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.formArea {
+    width: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.formArea .form-Imfo {
+    border: 1px solid #bfbebe;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.formArea .form-Imfo .formtitle {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.formArea .form-Imfo .fieldinput {
+    padding: 10px 0px;
+}
+
+.formArea .form-Imfo .fieldinput .form-input {
+    display: block;
+    width: 100%;
+    padding: .600rem .75rem;
+    font-size: 1rem;
+    font-weight: 100;
+    outline: none;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: 1px solid grey;
+    margin-top: 8px;
+}
+
+.form-Imfo .logininput .secinputdropdown {
+    display: block;
+    position: relative;
+}
+
+.form-Imfo .logininput .secinputdropdown .flagcontainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1px;
+    right: auto;
+    left: 0;
+}
+
+.formArea .astro-form .form-Imfo .Otpscreen {
+    margin-top: 10px;
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.astro-form .form-Imfo .Otpbox {
+    display: block;
+    text-transform: capitalize;
+    margin: auto;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #fd7e14;
+    padding: 5px 20px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    width: 180px;
+    white-space: nowrap;
+    height: 41px;
+    border: none;
+}
+
+.astro-form .form-Imfo .Otpbox:hover {
+    background-color: #ffcc33;
+    color: #ffffff;
+}
+
+.formArea .forminput-controller {
+    padding: 4px 10px;
+    border-radius: 15px;
+    border: 1px solid lightblue;
+    outline: none;
+}

@@ -1,0 +1,89 @@
+.kundli-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    /* box-shadow: 2px 3px 6px gray; */
+    border: 1px solid #dedede;
+    padding: 20px;
+    padding-bottom: 30px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.kundli-form input,
+select {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-bottom: 12px;
+}
+
+.kundli-form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kundli-form div input {
+    width: 32%;
+}
+
+.kundli-form.content {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    color: #444;
+    padding-bottom: 20px;
+    height: 100%;
+
+}
+
+.kundli-form.content p {
+    margin-bottom: 10px;
+}
+
+.hs_kd_first_sec_wrapper h4 span {
+    margin-top: 10px;
+    margin-left: 42px;
+}
+
+.hs_kd_first_sec_wrapper h4 span:after {
+
+    right: 8px;
+
+}
+
+.hs_kd_third_sec_wrapper h4 span {
+
+    margin-left: 42px;
+}
+
+.hs_kd_third_sec_wrapper h4 span:after {
+
+    right: 8px;
+
+
+}
+
+.hs_kd_five_heading_sec_wrapper h4 span {
+    margin-left: 42px;
+}
+
+.hs_kd_five_heading_sec_wrapper h4 span:after {
+    right: 8px;
+}

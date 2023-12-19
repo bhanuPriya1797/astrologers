@@ -1,0 +1,98 @@
+.aries-table-box #wrapper {}
+
+.aries-table-box #wrapper h1 {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aries-table-box #wrapper a {
+    display: block;
+    font-size: 1.2em;
+    padding-top: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.aries-table-box #tabContainer {
+    /* width: 700px;
+        padding: 15px; */
+
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.aries-table-box #tabs {
+    /* height: 30px; */
+    overflow: hidden;
+    background-color: rgb(238, 237, 237);
+    margin-bottom: 35px;
+}
+
+.aries-table-box #tabs>ul {
+    font: 1em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aries-table-box #tabs>ul>li {
+    padding: 12px 0px;
+    display: block;
+    float: left;
+    color: #5b5b5b;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-right: 1px solid #F96F07;
+    /* background: #C9C9C9; */
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: normal;
+
+}
+
+.aries-table-box #tabs>ul>li:hover {
+    background: #F96F07;
+    /* old browsers */
+    /* background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); */
+    /* firefox */
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(10%, #F3F3F3), color-stop(50%, #F3F3F3), color-stop(100%, #FFFFFF)); */
+    /* webkit */
+    cursor: pointer;
+    color: white;
+}
+
+.aries-table-box #tabs>ul>li.tabActiveHeader {
+    background: #F96F07;
+    /* old browsers */
+    /* background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); */
+    /* firefox */
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(10%, #F3F3F3), color-stop(50%, #F3F3F3), color-stop(100%, #FFFFFF)); */
+    /* webkit */
+    cursor: pointer;
+    color: white;
+}
+
+.aries-table-box #tabscontent {
+    background-color: white;
+}
+
+.aries-table-box #tabscontent p {
+    margin-bottom: 10px;
+}
+
+.aries-table-box #tabscontent h5 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: normal;
+    margin-bottom: 8px;
+    color: gray;
+}
