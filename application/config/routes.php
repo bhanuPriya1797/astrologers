@@ -111,6 +111,8 @@ $route['shope/shop'] 	= 'shope/shope';
 $route['shope/shop/(:any)']	= 'shope/shope_details';
 
 $route['astrologers'] 	= 'Astrologer';
+$route['astrologer/login'] 	= 'Astrologer/login';
+$route['astrologer/dashboard'] 	= 'Astrologer/dashboard';
 
 $route['signup'] = "customer/registration";
 $route['verifyotp'] = "customer/verifyMobineNumber";

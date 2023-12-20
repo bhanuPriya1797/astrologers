@@ -40,9 +40,15 @@
 							<span class="online-green" id="online-box"></span>
 							<div class="astro-image">
 								<a href="/astrologer/Astro-Pinky/">
+								<?php if($astrologer->profile_image) {?>
 									<img loading="lazy"
 										src="assets/uploads/astrologers_registration/<?php echo $astrologer->profile_image; ?>"
 										alt="Not Available">
+										<?php } else { ?>
+									<img loading="lazy"
+										src="https://d3e0xze5s330hm.cloudfront.net/media/upload/images/Pinky_Astro_2-removebg-preview.webp"
+										alt="Not Available">
+								<?php } ?>
 								</a>
 							</div>
 							<div class="astro-rating">

@@ -87,8 +87,8 @@ class Astrologer_registration extends CI_Controller {
                                 "name" => $this->input->post('name'),
                                 "mobile_no" => $this->input->post('mobile_no'),
                                 "email" => $this->input->post('email'),
-                                "all_skills" => $this->input->post('all_skills'),
-                                "language_known" => $this->input->post('language_known'),
+                                "all_skills" => implode(',', $this->input->post('all_skills')),
+                                "language_known" => implode(',', $this->input->post('language_known')),
                                 "location" => $this->input->post('location'),
                                 "experience" => $this->input->post('experience_in_years'),
                                 "gender" => $this->input->post('gender'),
@@ -123,8 +123,8 @@ class Astrologer_registration extends CI_Controller {
                             "name" => $this->input->post('name'),
                             "mobile_no" => $this->input->post('mobile_no'),
                             "email" => $this->input->post('email'),
-                            "all_skills" => $this->input->post('all_skills'),
-                            "language_known" => $this->input->post('language_known'),
+                            "all_skills" => implode(',', $this->input->post('all_skills')),
+                            "language_known" => implode(',', $this->input->post('language_known')),
                             "location" => $this->input->post('location'),
                             "experience" => $this->input->post('experience_in_years'),
                             "gender" => $this->input->post('gender'),
@@ -153,7 +153,6 @@ class Astrologer_registration extends CI_Controller {
 			// }
 
 			
-
 		}else{
 
 			$this->load->view('astrologer_registration');

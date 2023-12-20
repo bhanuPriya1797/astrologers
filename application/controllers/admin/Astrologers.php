@@ -13,6 +13,7 @@ class Astrologers extends Core_Admin_Controller {
         $this->data['success']="";
         $this->load->model('admin/PermissionModel');
         $this->load->model('admin/Subadmin_model');
+		$this->load->model('Astrologer_model');
         $this->load->model('admin/Login_model', 'admin');
         if(!isset($this->session->userdata['userPermissions'])){
             $this->roles->getGoUserRoles();   
@@ -235,9 +236,17 @@ class Astrologers extends Core_Admin_Controller {
 
     public function change_status()
     {
-        return $this->PermissionModel->Update($this->input->post('id'),['status' => $this->input->post('status')],'tbl_astrologers',);
+		$id = $this->input->post('id');
+    	$status = $this->input->post('status');
 
-        
+        $this->PermissionModel->Update($id,['status' => $status],'tbl_astrologers',);
+		
+		if($status == 1){
+			$static_password = '12345678';
+			//Sent here mail also to the user if status is active
+			$password = md5($static_password);
+			$this->Astrologer_model->updatePassword($password,$id);
+		}
     }
 
     

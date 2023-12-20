@@ -9,6 +9,11 @@
         <meta name="author" content="" />
         <meta name="MobileOptimized" content="320" />
         <?php include('includes/css.php'); ?>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js"></script>
+
     </head>
 <body>
     <!-- preloader Start -->
@@ -73,6 +78,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="hs_cn_second_sec_wrapper">
                                     <h2>Astrologer Registration</h2>
+									<h5>If already registered then<a href="<?php echo base_url('astrologer/login'); ?>" style="color: #ff0000;">Login</a> here</h5>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -104,19 +110,38 @@
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <label>All Skills : </label>
                                         <div class="hs_num_input_wrapper">
-                                            <input type="text" name="all_skills" value="<?php echo set_value('all_skills'); ?>">
+                                            <!-- <input type="text" name="all_skills" value="<?php echo set_value('all_skills'); ?>"> -->
+											<select name="all_skills[]" multiple>
+                                                <option value="" disabled>Select Skills</option>
+                                                <option value="Vedic" value="<?php echo set_value('all_skills'); ?>">Vedic</option>
+                                                <option value="Lal Kitab" value="<?php echo set_value('all_skills'); ?>">Lal Kitab</option>
+                                                <option value="Vastu" value="<?php echo set_value('all_skills'); ?>">Vastu</option>
+                                                <option value="Numerology" value="<?php echo set_value('all_skills'); ?>">Numerology</option>
+                                                <option value="Marriage Matching" value="<?php echo set_value('all_skills'); ?>">Marriage Matching</option>
+                                                <option value="Ashtakvarga" value="<?php echo set_value('all_skills'); ?>">Ashtakvarga</option>
+                                                <option value="Palmistry" value="<?php echo set_value('all_skills'); ?>">Palmistry</option>
+                                                <option value="Jaimini" value="<?php echo set_value('all_skills'); ?>">Jaimini</option>
+                                                <option value="Face Reading" value="<?php echo set_value('all_skills'); ?>">Face Reading</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <label>Location : </label>
-                                        <div class="hs_num_input_wrapper">
-                                            <input type="text" name="location" value="<?php echo set_value('location'); ?>">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    
+                                    <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <label>Language Known : </label>
                                         <div class="hs_num_input_wrapper">
                                             <input type="" name="language_known" value="<?php echo set_value('language_known'); ?>">
+                                        </div>
+                                    </div> -->
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <label>Language Known :</label>
+                                        <div class="hs_num_input_wrapper">
+                                            <select name="language_known[]" multiple>
+                                                <option value="" disabled>Select Languages</option>
+                                                <option value="English" value="<?php echo set_value('language_known'); ?>">English</option>
+                                                <option value="Hindi" value="<?php echo set_value('language_known'); ?>">Hindi</option>
+                                                <option value="Telugu" value="<?php echo set_value('language_known'); ?>">Telugu</option>
+                                                <option value="Bengoli" value="<?php echo set_value('language_known'); ?>">Bengoli</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -127,6 +152,12 @@
                                                 <option value="male" value="<?php echo set_value('gender'); ?>">Male</option>
                                                 <option value="female" value="<?php echo set_value('gender'); ?>">Female</option>
                                             </select>
+                                        </div>
+                                    </div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <label>Location : </label>
+                                        <div class="hs_num_input_wrapper">
+                                            <input type="text" name="location" value="<?php echo set_value('location'); ?>">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
