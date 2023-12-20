@@ -78,7 +78,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="hs_cn_second_sec_wrapper">
                                     <h2>Astrologer Registration</h2>
-									<h5>If already registered then<a href="<?php echo base_url('astrologer/login'); ?>" style="color: #ff0000;">Login</a> here</h5>
+									<h5>If already registered then<a href="<?php echo base_url('astrologer_registration'); ?>" style="color: #ff0000;">Login</a> here</h5>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

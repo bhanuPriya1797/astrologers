@@ -18,6 +18,13 @@ class Astrologer extends CI_Controller {
 		$this->load->view('astrologers',$data);
 	}
 
+	public function details()
+	{
+		$slug = $this->uri->segment(3);
+		$data['astrologer'] = $this->astrologer->getAstrologerBySlug($slug);
+		$this->load->view('astrologer_details',$data);
+	}
+
 	public function login()
 	{
 		if ($this->input->server('REQUEST_METHOD') == 'POST'){

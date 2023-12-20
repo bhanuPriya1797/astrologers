@@ -97,7 +97,7 @@ $route['admin/astrologers/(:num)'] 	= 'admin/astrologers/edit_astrologers';
 $route['admin/astrologers/add'] 	= 'admin/astrologers/add_astrologers';
 $route['admin/astrologers/delete/(:num)'] 	= 'admin/astrologers/delete_astrologers';
 
-$route['admin/user'] 	= 'admin/customers/index';
+$route['admin/user'] 	= 'admin/customers/index'; 
 $route['admin/user/(:num)'] 	= 'admin/customers/edit_customer';
 $route['admin/user/add'] 	= 'admin/customers/add_customer';
 $route['admin/user/delete/(:num)'] 	= 'admin/customers/delete_customer';
@@ -111,6 +111,7 @@ $route['shope/shop'] 	= 'shope/shope';
 $route['shope/shop/(:any)']	= 'shope/shope_details';
 
 $route['astrologers'] 	= 'Astrologer';
+$route['astrologer/details/(:any)'] 	= 'Astrologer/details';
 $route['astrologer/login'] 	= 'Astrologer/login';
 $route['astrologer/dashboard'] 	= 'Astrologer/dashboard';
 

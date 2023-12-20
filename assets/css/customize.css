@@ -43,6 +43,7 @@ html {
 
 .astro-image img {
     width: 88px;
+	height: 88px;
     border-radius: 50%;
     border: 1px solid #34C105;
 }

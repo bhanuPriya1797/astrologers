@@ -24,6 +24,7 @@ class Astrologer_registration extends CI_Controller {
         parent::__construct();
         $this->load->library('form_validation');
         $this->load->model('admin/PermissionModel');
+        $this->load->model('Astrologer_model');
 
      }
 
@@ -85,6 +86,7 @@ class Astrologer_registration extends CI_Controller {
                             $data = [
 
                                 "name" => $this->input->post('name'),
+								"slug" => $this->Astrologer_model->generateSlug($this->input->post('name')),
                                 "mobile_no" => $this->input->post('mobile_no'),
                                 "email" => $this->input->post('email'),
                                 "all_skills" => implode(',', $this->input->post('all_skills')),
@@ -121,6 +123,7 @@ class Astrologer_registration extends CI_Controller {
                         $data = [
 
                             "name" => $this->input->post('name'),
+							"slug" => $this->Astrologer_model->generateSlug($this->input->post('name')),
                             "mobile_no" => $this->input->post('mobile_no'),
                             "email" => $this->input->post('email'),
                             "all_skills" => implode(',', $this->input->post('all_skills')),

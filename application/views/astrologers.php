@@ -39,7 +39,7 @@
 						<div class="astro-status">
 							<span class="online-green" id="online-box"></span>
 							<div class="astro-image">
-								<a href="/astrologer/Astro-Pinky/">
+								<a href="<?php echo base_url('astrologer/details/'.$astrologer->slug);?>">
 								<?php if($astrologer->profile_image) {?>
 									<img loading="lazy"
 										src="assets/uploads/astrologers_registration/<?php echo $astrologer->profile_image; ?>"
@@ -59,7 +59,7 @@
 					</div>
 					<div class="astro-detail">
 						<p class="astro-name">
-							<a href="/astrologer/Astro-Pinky/">
+							<a href="<?php echo base_url('astrologer/details/'.$astrologer->slug);?>">
 							<?php echo $astrologer->name; ?>
 							</a>
 						</p>
