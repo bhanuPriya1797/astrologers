@@ -11,7 +11,7 @@ class Astrologer extends CI_Controller {
 	public function index()
 	{
 		$data['astrologer_list'] = $this->astrologer->getAstrologers();
-		// echo "<pre>"; print_r($data); die;
+		// echo "<pre>"; print_r($data); die; 
 		$this->load->view('astrologers',$data); 
 	}
 }
