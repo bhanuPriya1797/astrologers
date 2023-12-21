@@ -87,6 +87,11 @@ $route['admin/category/(:num)'] 	= 'admin/category/edit_category';
 $route['admin/category/add'] 	= 'admin/category/add_category';
 $route['admin/category/delete/(:num)'] 	= 'admin/category/delete_category';
 
+$route['admin/gifts'] 	= 'admin/gift/index';
+$route['admin/gifts/(:num)'] 	= 'admin/gift/edit_gift';
+$route['admin/gifts/add'] 	= 'admin/gift/add_gift';
+$route['admin/gifts/delete/(:num)'] 	= 'admin/Gift/delete_gift';
+
 $route['admin/products'] 	= 'admin/products/index';
 $route['admin/products/(:num)'] 	= 'admin/products/edit_product';
 $route['admin/products/add'] 	= 'admin/products/add_product';

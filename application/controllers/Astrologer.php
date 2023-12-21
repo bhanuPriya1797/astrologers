@@ -5,9 +5,10 @@ class Astrologer extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('Astrologer_model','astrologer');
 		$this->load->library('form_validation');
 		$this->load->library('session');
+		$this->load->model('Gift_model', 'gift');
+		$this->load->model('Astrologer_model','astrologer');
 	}
 
 
@@ -22,6 +23,8 @@ class Astrologer extends CI_Controller {
 	{
 		$slug = $this->uri->segment(3);
 		$data['astrologer'] = $this->astrologer->getAstrologerBySlug($slug);
+		$data['gifts'] = $this->gift->getGifts();
+		
 		$this->load->view('astrologer_details',$data);
 	}
 
